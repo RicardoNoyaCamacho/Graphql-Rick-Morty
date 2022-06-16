@@ -36,14 +36,14 @@ const routes: Routes = [
   {
     path: 'about',
     loadChildren: () =>
-      import('./components/pages/about/about/about.module').then(
+      import('./components/pages/about/about.module').then(
         (m) => m.AboutModule
       ),
   },
   {
     path: '**',
     loadChildren: () =>
-      import('./components/pages/notFound/not-found/not-found.module').then(
+      import('./components/pages/notFound/not-found.module').then(
         (m) => m.NotFoundModule
       ),
   },
