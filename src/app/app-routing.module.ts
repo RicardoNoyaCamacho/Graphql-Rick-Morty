@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'character-list',
+    redirectTo: 'characters-list',
     pathMatch: 'full',
   },
   {
@@ -13,14 +13,14 @@ const routes: Routes = [
       import('./components/pages/home/home.module').then((m) => m.HomeModule),
   },
   {
-    path: 'episode',
+    path: 'episodes',
     loadChildren: () =>
       import('./components/pages/episodes/episodes.module').then(
         (m) => m.EpisodesModule
       ),
   },
   {
-    path: 'character-list',
+    path: 'characters-list',
     loadChildren: () =>
       import(
         './components/pages/characters/characters-list/characters-list.module'
